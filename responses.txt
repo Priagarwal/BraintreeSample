@@ -1,0 +1,188 @@
+{ subscription:
+   { addOns: [],
+     balance: '0.00',
+     billingDayOfMonth: 20,
+     billingPeriodEndDate: null,
+     billingPeriodStartDate: null,
+     currentBillingCycle: 0,
+     daysPastDue: null,
+     discounts: [],
+     failureCount: 0,
+     firstBillingDate: '2014-06-20',
+     id: '3rbwpb',
+     merchantAccountId: 'cg86n9ybwx8f8x7z',
+     neverExpires: true,
+     nextBillAmount: '100.00',
+     nextBillingPeriodAmount: '100.00',
+     nextBillingDate: '2014-06-20',
+     numberOfBillingCycles: null,
+     paidThroughDate: null,
+     paymentMethodToken: '3b47kr',
+     planId: 'p1',
+     price: '100.00',
+     status: 'Active',
+     trialDuration: 30,
+     trialDurationUnit: 'day',
+     trialPeriod: true,
+     descriptor: { name: null, phone: null },
+     transactions: [] },
+  success: true }
+  
+  
+  { amount: '1000.00',
+  creditCard:
+   { number: '$bt4|javascript_1_3_9$tqYvvQ9ptFKZouoF8I8T69uayGFELE3w1faS5xZ2JxMO
+Mio7Zfq0IOYBodsI49T7daR5ZyUdC85bfr83kry3dGiRXG8YsJwmarrZslPIy53h6OX5gyiTFrskyK10
+x8NGiPQpuMENvaOz6Firkj//hcCCsdntJ4L/NzMAl0Isx7r7Pk/o9TYaNJfTco4ep8gKTFhQEKUcipfB
+5XtR1vnV44ArdBJUKJvVDXRdCLMcXd8e5een0IKvECMo8d/FwSHeh8Hyw2Oopv5wRLuFSyRDdDdcPFXS
+xNpJJPTDrwJhv483vF/3s/MBAw8AODBBXBqYoYooTknN+wzxHkZypqMI7A==$z7lPTyyK7QMS7spgLNk
+M0W7/kGJFyGbna4MpkwgiGLWdoIk66Ga69ZNlGansHlrx$QfRj1ESXygasAP4tV8r0j2HD77XRiZypsx
+WGHIH33iI=',
+     cvv: '$bt4|javascript_1_3_9$uTGYemzdcl5OItjPLRAsyhIDR06/ar/ojDhxyGp6kSfXes3
+9Hkc5yr/SB2Ceo6qjKTmR5comepBu2rgmKhuE2ZS0bzhJhS2zPiTtfVjdBA5zUJG4SpBTnIiKt1uD95T
+SiT7jgsZEc3FDx1EPNi92iM2VFOt8JdUDxcspXeBArD1fglxqUzEvoHok4cpkj8S+hmjspq1iTAfHy0n
+KTHSvhaM5xiR+0AKImGyc54FdZNhbPxfXEMY+xASWWRlZMPnlo2vrR46ux0kdTnnZEjWfyjo2ngmpdaJ
+x0sDiGLCY84IRNOraHF/oeWL4yThu2ao0MHEvblZPi89h9kNix7i4iQ==$7MUdEBcZkkJNyNwQqYpPR1
+23jpJH6lkq2L8nWFos6ws=$j8u0GKmn019Sp0YKG0yrnIepuvFURjp20NIYkFy8oq8=',
+     expirationMonth: '11',
+     expirationYear: '2015' },
+  options: { submitForSettlement: true } }
+  
+  Sub merchant creation
+   merchantAccount:
+  { status: 'pending',
+    id: 'blueLaddersStore',
+    masterMerchantAccount:
+     { status: 'active',
+       id: 'cg86n9ybwx8f8x7z',
+       currencyIsoCode: 'USD',
+       subMerchantAccount: false },
+    currencyIsoCode: 'USD',
+    subMerchantAccount: true },
+ success: true }
+ 
+ Sub merchant's transaction
+ 
+  transaction:
+  { id: '4cvbtg',
+    status: 'submitted_for_settlement',
+    type: 'sale',
+    currencyIsoCode: 'USD',
+    amount: '100.00',
+    merchantAccountId: 'blueLaddersStore',
+    orderId: null,
+    createdAt: '2014-06-04T09:46:48Z',
+    updatedAt: '2014-06-04T09:46:48Z',
+    customer:
+     { id: null,
+       firstName: null,
+       lastName: null,
+       company: null,
+       email: null,
+       website: null,
+       phone: null,
+       fax: null },
+    billing:
+     { id: null,
+       firstName: null,
+       lastName: null,
+       company: null,
+       streetAddress: null,
+       extendedAddress: null,
+       locality: null,
+       region: null,
+       postalCode: null,
+       countryName: null,
+       countryCodeAlpha2: null,
+       countryCodeAlpha3: null,
+       countryCodeNumeric: null },
+    refundId: null,
+    refundIds: [],
+    refundedTransactionId: null,
+    settlementBatchId: null,
+    shipping:
+     { id: null,
+       firstName: null,
+       lastName: null,
+       company: null,
+       streetAddress: null,
+       extendedAddress: null,
+       locality: null,
+       region: null,
+       postalCode: null,
+       countryName: null,
+       countryCodeAlpha2: null,
+       countryCodeAlpha3: null,
+       countryCodeNumeric: null },
+    customFields: '',
+    avsErrorResponseCode: null,
+    avsPostalCodeResponseCode: 'I',
+    avsStreetAddressResponseCode: 'I',
+    cvvResponseCode: 'I',
+    gatewayRejectionReason: null,
+    processorAuthorizationCode: 'MVWP0G',
+    processorResponseCode: '1000',
+    processorResponseText: 'Approved',
+    voiceReferralNumber: null,
+    purchaseOrderNumber: null,
+    taxAmount: null,
+    taxExempt: false,
+    creditCard:
+     { token: null,
+       bin: '411111',
+       last4: '1111',
+       cardType: 'Visa',
+       expirationMonth: '12',
+       expirationYear: '2020',
+       customerLocation: 'US',
+       cardholderName: null,
+       imageUrl: 'https://assets.braintreegateway.com/payment_method_logo/visa.
+ng?environment=sandbox&merchant_id=sqkk4drs7c64y9wk',
+       prepaid: 'Unknown',
+       healthcare: 'Unknown',
+       debit: 'Unknown',
+       durbinRegulated: 'Unknown',
+       commercial: 'Unknown',
+       payroll: 'Unknown',
+       issuingBank: 'Unknown',
+       countryOfIssuance: 'Unknown',
+       productId: 'Unknown',
+       venmoSdk: false,
+       maskedNumber: '411111******1111',
+       expirationDate: '12/2020' },
+    statusHistory: [ [Object], [Object] ],
+    planId: null,
+    subscriptionId: null,
+    subscription: { billingPeriodEndDate: null, billingPeriodStartDate: null },
+
+    addOns: [],
+    discounts: [],
+    descriptor: { name: null, phone: null },
+    recurring: false,
+    channel: null,
+    serviceFeeAmount: '10.00',
+    escrowStatus: 'hold_pending',
+    disbursementDetails:
+     { disbursementDate: null,
+       settlementAmount: null,
+       settlementCurrencyIsoCode: null,
+       settlementCurrencyExchangeRate: null,
+       fundsHeld: null,
+       success: null },
+    disputes: [] },
+ success: true }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  

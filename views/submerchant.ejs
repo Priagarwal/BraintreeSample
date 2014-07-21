@@ -1,0 +1,65 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Braintree Customer Form</h1>
+      <form action="/create_submerchant" method="POST" id="braintree-payment-form">
+      <h2>Sub Merchant Information</h2>
+      <p>
+        <label>First Name</label>
+        <input type="text" name="first_name" id="first_name"></input>
+      </p>
+      <p>
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" id="last_name"></input>
+      </p>
+	  <p>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email"></input>
+      </p>
+	  <p>
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone"></input>
+      </p>
+	  <p>
+        <label for="dob">Date of Birth</label>
+        <input type="text" name="dob" id="dob"></input>
+      </p>
+	  <p>
+        <label for="ssn">SSN</label>
+        <input type="text" name="ssn" id="ssn"></input>
+      </p>
+	  <h2>Address</h2>
+	  <p>
+        <label for="street">Street Addresse</label>
+        <input type="text" name="street" id="street"></input>
+      </p>
+	  <p>
+        <label for="locality">Locality</label>
+        <input type="text" name="locality" id="locality"></input>
+      </p>
+	  <p>
+        <label for="region">Region</label>
+        <input type="text" name="region" id="region"></input>
+      </p>
+      <p>
+        <label for="postal_code">Postal Code</label>
+        <input type="text" name="postal_code" id="postal_code"></input>
+      </p>
+      <p>
+        <label for="funding_email">Funding Email</label>
+        <input type="text" name="funding_email" id="funding_email"></input>
+      </p>
+	  <p>
+        <label for="funding_routing_num">Funding Routing Number</label>
+        <input type="text" name="funding_routing_num" id="funding_routing_num"></input>
+      </p>
+      <input class="submit-button" type="submit" />
+    </form>
+    <script src="https://js.braintreegateway.com/v1/braintree.js"></script>
+    <script>
+      var braintree = Braintree.create("MIIBCgKCAQEA25ic1qMHamPsvZxyiMuytwQuMGH1LOsS1bWmBouOqN3OXZk/4hqYrxEBNYhCEQmrrdzDcP3M3BhB6yemnkanNvytiiJNzhUXbzashOmlC6/bbL2k6wo3V1WRyUBGoZmTGA0hJEQFud17HQO7j0UmZVdYrc0hu07+84tPlraCRxUm6JU9iF24vuhE+ZGIB9Nr/cTHwgtmTos+4q4KSwyLVhir4/ryNscExi/1uEaqWfr1TwlZALJrqVNnVAhJyTPyRl7LwYIxO0kLN2A2kCXE2TXuiSD8YDSpFo8BTkUsuBggK/ZxO/kMGKUyMWx8ToMYm1tVKkvTTvkNmDvo+A+A0wIDAQAB");
+      braintree.onSubmitEncryptForm("braintree-payment-form");
+    </script>
+  </body>
+</html>

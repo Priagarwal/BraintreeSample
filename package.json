@@ -1,0 +1,21 @@
+{
+  "name": "braintree-getting-paid",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "ejs": "*",
+    "braintree": "*",
+	"body-parser": "*"
+  }
+}
+
+"Access-Control-Allow-Origin": "*",
+"CORRELATION-ID": "11148cb9b63e2",
+"Cache-Control": "no-cache",
+"Content-Type": "application/json",
+"Date": "Fri, 04 Jul 2014 05:31:52 GMT",
+"Expires": "Thu, 01 Jan 1970 05:30:00 IST",
+"Pragma": "No-cache",
+"Server": "Apache-Coyote/1.1",
+"Transfer-Encoding": "chunked"
